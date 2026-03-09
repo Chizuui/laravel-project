@@ -22,3 +22,23 @@ Route::get('/profile', function () {
 })->name('profile');
 
 Route::redirect('/profile', '/user');
+
+Route::get('/hello', function () {
+    return "Hello World";
+});
+
+Route::get('/user/{id}', function ($id) {
+    return "User ID : " . $id;
+});
+
+Route::get('/post/{post}/comment/{comment}', function ($post, $comment) {
+//
+});
+
+Route::match(['get', 'post'], '/', function() {
+
+});
+
+Route::any('/', function() {
+
+});
