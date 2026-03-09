@@ -3,6 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
+Route::post('/send', function () {
+    return "Data sended";
+});
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -13,9 +18,6 @@ Route::get('/form', function () {
     return view('form');
 });
 
-Route::post('/send', function () {
-    return "Data sended";
-});
 
 Route::get('/profile', function () {
     return "Halaman Profile";
@@ -42,3 +44,6 @@ Route::match(['get', 'post'], '/', function() {
 Route::any('/', function() {
 
 });
+
+
+Route::permanentRedirect('/here', '/there', 301);
