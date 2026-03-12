@@ -36,7 +36,6 @@ Route::get('/form', function () {
     return view('form');
 });
 
-
 // Redirect biasa (HTTP 302)
 Route::redirect('/here', '/there');
 
@@ -58,47 +57,31 @@ Route::get('/sapa/{name?}', function ($name = 'John') {
     return $name;
 });
 
-/*
-|--------------------------------------------------------------------------
-| 7. Regular Expression Constraints
-|--------------------------------------------------------------------------
-| Membatasi format parameter menggunakan ->where()
-*/
+// 7. Regular Expression Constraints
 
-// Parameter {name} hanya boleh huruf (A-Za-z)
+// Parameter Huruf
 Route::get('/cari/{name}', function ($name) {
     return "Mencari user: " . $name;
 })->where('name', '[A-Za-z]+');
 
-// Parameter {id} hanya boleh angka (0-9)
+// Parameter Angka
 Route::get('/post/{id}', function ($id) {
     return "Post ID: " . $id;
 })->where('id', '[0-9]+');
 
-// Multiple parameter constraints
-Route::get('/data/{id}/{name}', function ($id, $name) {
-    return "ID: " . $id . ", Nama: " . $name;
-})->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
+// Multiple
+Route::get('/data/{name}/{id}', function ($name, $id) {
+    return "Nama: " . $name . ", ID: " . $id;
+})->where(['name' => '[a-z]+', 'id' => '[0-9]+']);
 
-/*
-|--------------------------------------------------------------------------
-| 8. Global Constraints — didefinisikan di AppServiceProvider (boot)
-|--------------------------------------------------------------------------
-| Route::pattern('id', '[0-9]+') diterapkan di AppServiceProvider::boot()
-| Route berikut secara otomatis membatasi {id} hanya angka:
-*/
+// 8. Global Constraints
 
-Route::get('/product/{id}', function ($id) {
-    return "Product ID: " . $id . " (hanya angka karena global constraint)";
+Route::get('/user1/{id}', function ($id) {
+    return "User1 ID: " . $id;
 });
 
-/*
-|--------------------------------------------------------------------------
-| 9. Encoded Forward Slashes
-|--------------------------------------------------------------------------
-| Mengizinkan karakter / dalam parameter menggunakan regex .*
-*/
+// 9. Encoded Forward Slashes
 
 Route::get('/search/{search}', function ($search) {
-    return "Mencari: " . $search;
+    return $search;
 })->where('search', '.*');
