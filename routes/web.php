@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\ManagementUserController;
 
-Route::get('/user', [UserController::class, 'index']);
+Route::get('/home', function () {
+    return view('home');
+});
+Route::resource('/user', ManagementUserController::class);
 
