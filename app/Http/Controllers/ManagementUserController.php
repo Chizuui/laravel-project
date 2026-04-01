@@ -6,7 +6,14 @@ use Illuminate\Http\Request;
 
 class ManagementUserController extends Controller {
     public function index() {
-        return "Halaman Management User";
+        $nama = "Desca Rizki Febriant";
+        $matkul = [
+            "Workshop Infrastruktur Jaringan",
+            "Workshop Elektronika Terapan",
+            "Workshop Pemrograman Web"
+        ];
+
+        return view('home', compact('nama', 'matkul'));
     }
 
     public function create() {
