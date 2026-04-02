@@ -9,8 +9,8 @@
     <meta name="keywords" content="">
 
     <!-- Favicons -->
-    <link href="{{ asset('frontend/assets/img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('frontend/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('homepage/assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('homepage/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -20,14 +20,14 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="{{ asset('frontend/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ asset('frontend/assets/vendor/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ asset('frontend/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('frontend/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('homepage/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('homepage/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('homepage/assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ asset('homepage/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('homepage/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Main CSS File -->
-    <link href="{{ asset('frontend/assets/css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('homepage/assets/css/main.css') }}" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: Butterfly
@@ -40,7 +40,7 @@
 
 <body class="index-page">
 
-    @include('frontend.layouts.navbar')
+    @include('homepage.layouts.navbar')
 
     <main class="main">
         @yield('content')
@@ -121,17 +121,17 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="{{ asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('frontend/assets/vendor/php-email-form/validate.js') }}"></script>
-    <script src="{{ asset('frontend/assets/vendor/aos/aos.js') }}"></script>
-    <script src="{{ asset('frontend/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-    <script src="{{ asset('frontend/assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
-    <script src="{{ asset('frontend/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('frontend/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('frontend/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('homepage/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('homepage/assets/vendor/php-email-form/validate.js') }}"></script>
+    <script src="{{ asset('homepage/assets/vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('homepage/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('homepage/assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ asset('homepage/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('homepage/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('homepage/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
 
     <!-- Main JS File -->
-    <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
+    <script src="{{ asset('homepage/assets/js/main.js') }}"></script>
 
 </body>
 

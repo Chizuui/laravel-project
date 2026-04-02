@@ -1,4 +1,4 @@
-@extends('frontend.layouts.template')
+@extends('homepage.layouts.template')
 @section('content')
 
     <!-- Hero Section -->
@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="100">
-                    <img src="{{ asset('frontend/assets/img/hero-img.png') }}" class="img-fluid animated" alt="">
+                    <img src="{{ asset('homepage/assets/img/hero-img.png') }}" class="img-fluid animated" alt="">
                 </div>
             </div>
         </div>
@@ -30,7 +30,7 @@
             <div class="row gy-4">
 
                 <div class="col-lg-6 position-relative" data-aos="fade-up" data-aos-delay="100">
-                    <img src="{{ asset('frontend/assets/img/about.jpg') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('homepage/assets/img/about.jpg') }}" class="img-fluid" alt="">
                     <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
                 </div>
 
@@ -79,7 +79,7 @@
     <!-- Stats Section -->
     <section id="stats" class="stats section light-background">
 
-        <img src="{{ asset('frontend/assets/img/stats-bg.jpg') }}" alt="" data-aos="fade-in">
+        <img src="{{ asset('homepage/assets/img/stats-bg.jpg') }}" alt="" data-aos="fade-in">
 
         <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
 
@@ -131,35 +131,35 @@
             <div class="row g-0 clients-wrap">
 
                 <div class="col-xl-3 col-md-4 client-logo">
-                    <img src="{{ asset('frontend/assets/img/clients/client-1.png') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('homepage/assets/img/clients/client-1.png') }}" class="img-fluid" alt="">
                 </div><!-- End Client Item -->
 
                 <div class="col-xl-3 col-md-4 client-logo">
-                    <img src="{{ asset('frontend/assets/img/clients/client-2.png') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('homepage/assets/img/clients/client-2.png') }}" class="img-fluid" alt="">
                 </div><!-- End Client Item -->
 
                 <div class="col-xl-3 col-md-4 client-logo">
-                    <img src="{{ asset('frontend/assets/img/clients/client-3.png') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('homepage/assets/img/clients/client-3.png') }}" class="img-fluid" alt="">
                 </div><!-- End Client Item -->
 
                 <div class="col-xl-3 col-md-4 client-logo">
-                    <img src="{{ asset('frontend/assets/img/clients/client-4.png') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('homepage/assets/img/clients/client-4.png') }}" class="img-fluid" alt="">
                 </div><!-- End Client Item -->
 
                 <div class="col-xl-3 col-md-4 client-logo">
-                    <img src="{{ asset('frontend/assets/img/clients/client-5.png') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('homepage/assets/img/clients/client-5.png') }}" class="img-fluid" alt="">
                 </div><!-- End Client Item -->
 
                 <div class="col-xl-3 col-md-4 client-logo">
-                    <img src="{{ asset('frontend/assets/img/clients/client-6.png') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('homepage/assets/img/clients/client-6.png') }}" class="img-fluid" alt="">
                 </div><!-- End Client Item -->
 
                 <div class="col-xl-3 col-md-4 client-logo">
-                    <img src="{{ asset('frontend/assets/img/clients/client-7.png') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('homepage/assets/img/clients/client-7.png') }}" class="img-fluid" alt="">
                 </div><!-- End Client Item -->
 
                 <div class="col-xl-3 col-md-4 client-logo">
-                    <img src="{{ asset('frontend/assets/img/clients/client-8.png') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('homepage/assets/img/clients/client-8.png') }}" class="img-fluid" alt="">
                 </div><!-- End Client Item -->
 
             </div>
@@ -293,12 +293,13 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                         <div class="portfolio-content h-100">
-                            <img src="{{ asset('frontend/assets/img/portfolio/app-1.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('homepage/assets/img/portfolio/app-1.jpg') }}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>App 1</h4>
                                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                <a href="{{ asset('frontend/assets/img/portfolio/app-1.jpg') }}" title="App 1" data-gallery="portfolio-gallery-app"
-                                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="{{ asset('homepage/assets/img/portfolio/app-1.jpg') }}" title="App 1"
+                                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
                                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
                                         class="bi bi-link-45deg"></i></a>
                             </div>
@@ -307,11 +308,11 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                         <div class="portfolio-content h-100">
-                            <img src="{{ asset('frontend/assets/img/portfolio/product-1.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('homepage/assets/img/portfolio/product-1.jpg') }}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Product 1</h4>
                                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                <a href="{{ asset('frontend/assets/img/portfolio/product-1.jpg') }}" title="Product 1"
+                                <a href="{{ asset('homepage/assets/img/portfolio/product-1.jpg') }}" title="Product 1"
                                     data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                         class="bi bi-zoom-in"></i></a>
                                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
@@ -322,11 +323,11 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
                         <div class="portfolio-content h-100">
-                            <img src="{{ asset('frontend/assets/img/portfolio/branding-1.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('homepage/assets/img/portfolio/branding-1.jpg') }}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Branding 1</h4>
                                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                <a href="{{ asset('frontend/assets/img/portfolio/branding-1.jpg') }}" title="Branding 1"
+                                <a href="{{ asset('homepage/assets/img/portfolio/branding-1.jpg') }}" title="Branding 1"
                                     data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
                                         class="bi bi-zoom-in"></i></a>
                                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
@@ -337,11 +338,11 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                         <div class="portfolio-content h-100">
-                            <img src="{{ asset('frontend/assets/img/portfolio/books-1.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('homepage/assets/img/portfolio/books-1.jpg') }}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Books 1</h4>
                                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                <a href="{{ asset('frontend/assets/img/portfolio/books-1.jpg') }}" title="Branding 1"
+                                <a href="{{ asset('homepage/assets/img/portfolio/books-1.jpg') }}" title="Branding 1"
                                     data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i
                                         class="bi bi-zoom-in"></i></a>
                                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
@@ -352,12 +353,13 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                         <div class="portfolio-content h-100">
-                            <img src="{{ asset('frontend/assets/img/portfolio/app-2.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('homepage/assets/img/portfolio/app-2.jpg') }}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>App 2</h4>
                                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                <a href="{{ asset('frontend/assets/img/portfolio/app-2.jpg') }}" title="App 2" data-gallery="portfolio-gallery-app"
-                                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="{{ asset('homepage/assets/img/portfolio/app-2.jpg') }}" title="App 2"
+                                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
                                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
                                         class="bi bi-link-45deg"></i></a>
                             </div>
@@ -366,11 +368,11 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                         <div class="portfolio-content h-100">
-                            <img src="{{ asset('frontend/assets/img/portfolio/product-2.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('homepage/assets/img/portfolio/product-2.jpg') }}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Product 2</h4>
                                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                <a href="{{ asset('frontend/assets/img/portfolio/product-2.jpg') }}" title="Product 2"
+                                <a href="{{ asset('homepage/assets/img/portfolio/product-2.jpg') }}" title="Product 2"
                                     data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                         class="bi bi-zoom-in"></i></a>
                                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
@@ -381,11 +383,11 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
                         <div class="portfolio-content h-100">
-                            <img src="{{ asset('frontend/assets/img/portfolio/branding-2.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('homepage/assets/img/portfolio/branding-2.jpg') }}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Branding 2</h4>
                                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                <a href="{{ asset('frontend/assets/img/portfolio/branding-2.jpg') }}" title="Branding 2"
+                                <a href="{{ asset('homepage/assets/img/portfolio/branding-2.jpg') }}" title="Branding 2"
                                     data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
                                         class="bi bi-zoom-in"></i></a>
                                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
@@ -396,11 +398,11 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                         <div class="portfolio-content h-100">
-                            <img src="{{ asset('frontend/assets/img/portfolio/books-2.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('homepage/assets/img/portfolio/books-2.jpg') }}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Books 2</h4>
                                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                <a href="{{ asset('frontend/assets/img/portfolio/books-2.jpg') }}" title="Branding 2"
+                                <a href="{{ asset('homepage/assets/img/portfolio/books-2.jpg') }}" title="Branding 2"
                                     data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i
                                         class="bi bi-zoom-in"></i></a>
                                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
@@ -411,12 +413,13 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                         <div class="portfolio-content h-100">
-                            <img src="{{ asset('frontend/assets/img/portfolio/app-3.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('homepage/assets/img/portfolio/app-3.jpg') }}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>App 3</h4>
                                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                <a href="{{ asset('frontend/assets/img/portfolio/app-3.jpg') }}" title="App 3" data-gallery="portfolio-gallery-app"
-                                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="{{ asset('homepage/assets/img/portfolio/app-3.jpg') }}" title="App 3"
+                                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
                                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
                                         class="bi bi-link-45deg"></i></a>
                             </div>
@@ -425,11 +428,11 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                         <div class="portfolio-content h-100">
-                            <img src="{{ asset('frontend/assets/img/portfolio/product-3.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('homepage/assets/img/portfolio/product-3.jpg') }}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Product 3</h4>
                                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                <a href="{{ asset('frontend/assets/img/portfolio/product-3.jpg') }}" title="Product 3"
+                                <a href="{{ asset('homepage/assets/img/portfolio/product-3.jpg') }}" title="Product 3"
                                     data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                         class="bi bi-zoom-in"></i></a>
                                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
@@ -440,11 +443,11 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
                         <div class="portfolio-content h-100">
-                            <img src="{{ asset('frontend/assets/img/portfolio/branding-3.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('homepage/assets/img/portfolio/branding-3.jpg') }}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Branding 3</h4>
                                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                <a href="{{ asset('frontend/assets/img/portfolio/branding-3.jpg') }}" title="Branding 2"
+                                <a href="{{ asset('homepage/assets/img/portfolio/branding-3.jpg') }}" title="Branding 2"
                                     data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
                                         class="bi bi-zoom-in"></i></a>
                                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
@@ -455,11 +458,11 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                         <div class="portfolio-content h-100">
-                            <img src="{{ asset('frontend/assets/img/portfolio/books-3.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('homepage/assets/img/portfolio/books-3.jpg') }}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Books 3</h4>
                                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                                <a href="{{ asset('frontend/assets/img/portfolio/books-3.jpg') }}" title="Branding 3"
+                                <a href="{{ asset('homepage/assets/img/portfolio/books-3.jpg') }}" title="Branding 3"
                                     data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i
                                         class="bi bi-zoom-in"></i></a>
                                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
@@ -479,31 +482,32 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section dark-background">
 
-        <img src="{{ asset('frontend/assets/img/testimonials-bg.jpg') }}" class="testimonials-bg" alt="">
+        <img src="{{ asset('homepage/assets/img/testimonials-bg.jpg') }}" class="testimonials-bg" alt="">
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
 
             <div class="swiper init-swiper">
                 <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
+                    {
+                      "loop": true,
+                      "speed": 600,
+                      "autoplay": {
+                        "delay": 5000
+                      },
+                      "slidesPerView": "auto",
+                      "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                      }
+                    }
+                  </script>
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <img src="{{ asset('frontend/assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
+                            <img src="{{ asset('homepage/assets/img/testimonials/testimonials-1.jpg') }}"
+                                class="testimonial-img" alt="">
                             <h3>Saul Goodman</h3>
                             <h4>Ceo &amp; Founder</h4>
                             <div class="stars">
@@ -523,7 +527,8 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <img src="{{ asset('frontend/assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
+                            <img src="{{ asset('homepage/assets/img/testimonials/testimonials-2.jpg') }}"
+                                class="testimonial-img" alt="">
                             <h3>Sara Wilsson</h3>
                             <h4>Designer</h4>
                             <div class="stars">
@@ -543,7 +548,8 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <img src="{{ asset('frontend/assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
+                            <img src="{{ asset('homepage/assets/img/testimonials/testimonials-3.jpg') }}"
+                                class="testimonial-img" alt="">
                             <h3>Jena Karlis</h3>
                             <h4>Store Owner</h4>
                             <div class="stars">
@@ -563,7 +569,8 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <img src="{{ asset('frontend/assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
+                            <img src="{{ asset('homepage/assets/img/testimonials/testimonials-4.jpg') }}"
+                                class="testimonial-img" alt="">
                             <h3>Matt Brandon</h3>
                             <h4>Freelancer</h4>
                             <div class="stars">
@@ -583,7 +590,8 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-item">
-                            <img src="{{ asset('frontend/assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt="">
+                            <img src="{{ asset('homepage/assets/img/testimonials/testimonials-5.jpg') }}"
+                                class="testimonial-img" alt="">
                             <h3>John Larson</h3>
                             <h4>Entrepreneur</h4>
                             <div class="stars">
@@ -624,7 +632,7 @@
 
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="member">
-                        <img src="{{ asset('frontend/assets/img/team/team-1.jpg') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('homepage/assets/img/team/team-1.jpg') }}" class="img-fluid" alt="">
                         <div class="member-info">
                             <div class="member-info-content">
                                 <h4>Walter White</h4>
@@ -642,7 +650,7 @@
 
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="member">
-                        <img src="{{ asset('frontend/assets/img/team/team-2.jpg') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('homepage/assets/img/team/team-2.jpg') }}" class="img-fluid" alt="">
                         <div class="member-info">
                             <div class="member-info-content">
                                 <h4>Sarah Jhonson</h4>
@@ -660,7 +668,7 @@
 
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="member">
-                        <img src="{{ asset('frontend/assets/img/team/team-3.jpg') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('homepage/assets/img/team/team-3.jpg') }}" class="img-fluid" alt="">
                         <div class="member-info">
                             <div class="member-info-content">
                                 <h4>William Anderson</h4>
@@ -678,7 +686,7 @@
 
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="member">
-                        <img src="{{ asset('frontend/assets/img/team/team-4.jpg') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('homepage/assets/img/team/team-4.jpg') }}" class="img-fluid" alt="">
                         <div class="member-info">
                             <div class="member-info-content">
                                 <h4>Amanda Jepson</h4>
@@ -715,64 +723,72 @@
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="{{ asset('frontend/assets/img/gallery/gallery-1.jpg') }}" class="glightbox" data-gallery="images-gallery">
-                            <img src="{{ asset('frontend/assets/img/gallery/gallery-1.jpg') }}" alt="" class="img-fluid">
+                        <a href="{{ asset('homepage/assets/img/gallery/gallery-1.jpg') }}" class="glightbox"
+                            data-gallery="images-gallery">
+                            <img src="{{ asset('homepage/assets/img/gallery/gallery-1.jpg') }}" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div><!-- End Gallery Item -->
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="{{ asset('frontend/assets/img/gallery/gallery-2.jpg') }}" class="glightbox" data-gallery="images-gallery">
-                            <img src="{{ asset('frontend/assets/img/gallery/gallery-2.jpg') }}" alt="" class="img-fluid">
+                        <a href="{{ asset('homepage/assets/img/gallery/gallery-2.jpg') }}" class="glightbox"
+                            data-gallery="images-gallery">
+                            <img src="{{ asset('homepage/assets/img/gallery/gallery-2.jpg') }}" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div><!-- End Gallery Item -->
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="{{ asset('frontend/assets/img/gallery/gallery-3.jpg') }}" class="glightbox" data-gallery="images-gallery">
-                            <img src="{{ asset('frontend/assets/img/gallery/gallery-3.jpg') }}" alt="" class="img-fluid">
+                        <a href="{{ asset('homepage/assets/img/gallery/gallery-3.jpg') }}" class="glightbox"
+                            data-gallery="images-gallery">
+                            <img src="{{ asset('homepage/assets/img/gallery/gallery-3.jpg') }}" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div><!-- End Gallery Item -->
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="{{ asset('frontend/assets/img/gallery/gallery-4.jpg') }}" class="glightbox" data-gallery="images-gallery">
-                            <img src="{{ asset('frontend/assets/img/gallery/gallery-4.jpg') }}" alt="" class="img-fluid">
+                        <a href="{{ asset('homepage/assets/img/gallery/gallery-4.jpg') }}" class="glightbox"
+                            data-gallery="images-gallery">
+                            <img src="{{ asset('homepage/assets/img/gallery/gallery-4.jpg') }}" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div><!-- End Gallery Item -->
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="{{ asset('frontend/assets/img/gallery/gallery-5.jpg') }}" class="glightbox" data-gallery="images-gallery">
-                            <img src="{{ asset('frontend/assets/img/gallery/gallery-5.jpg') }}" alt="" class="img-fluid">
+                        <a href="{{ asset('homepage/assets/img/gallery/gallery-5.jpg') }}" class="glightbox"
+                            data-gallery="images-gallery">
+                            <img src="{{ asset('homepage/assets/img/gallery/gallery-5.jpg') }}" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div><!-- End Gallery Item -->
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="{{ asset('frontend/assets/img/gallery/gallery-6.jpg') }}" class="glightbox" data-gallery="images-gallery">
-                            <img src="{{ asset('frontend/assets/img/gallery/gallery-6.jpg') }}" alt="" class="img-fluid">
+                        <a href="{{ asset('homepage/assets/img/gallery/gallery-6.jpg') }}" class="glightbox"
+                            data-gallery="images-gallery">
+                            <img src="{{ asset('homepage/assets/img/gallery/gallery-6.jpg') }}" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div><!-- End Gallery Item -->
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="{{ asset('frontend/assets/img/gallery/gallery-7.jpg') }}" class="glightbox" data-gallery="images-gallery">
-                            <img src="{{ asset('frontend/assets/img/gallery/gallery-7.jpg') }}" alt="" class="img-fluid">
+                        <a href="{{ asset('homepage/assets/img/gallery/gallery-7.jpg') }}" class="glightbox"
+                            data-gallery="images-gallery">
+                            <img src="{{ asset('homepage/assets/img/gallery/gallery-7.jpg') }}" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div><!-- End Gallery Item -->
 
                 <div class="col-lg-3 col-md-4">
                     <div class="gallery-item">
-                        <a href="{{ asset('frontend/assets/img/gallery/gallery-8.jpg') }}" class="glightbox" data-gallery="images-gallery">
-                            <img src="{{ asset('frontend/assets/img/gallery/gallery-8.jpg') }}" alt="" class="img-fluid">
+                        <a href="{{ asset('homepage/assets/img/gallery/gallery-8.jpg') }}" class="glightbox"
+                            data-gallery="images-gallery">
+                            <img src="{{ asset('homepage/assets/img/gallery/gallery-8.jpg') }}" alt="" class="img-fluid">
                         </a>
                     </div>
                 </div><!-- End Gallery Item -->
