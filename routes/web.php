@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ManagementUserController;
 use App\Http\Controllers\Homepage\HomeController;
 use App\Http\Controllers\AdminPage\AdminController;
+use App\Http\Controllers\Dashboard\DashboardController;
 
 // Route untuk template Butterfly
 Route::get('/home', [HomeController::class, 'index'])->name('home');
@@ -11,6 +12,8 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::resource('/user', ManagementUserController::class);
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+
+Route::get('/dash', [DashboardController::class, 'index'])->name('dashboard');
 
 // Routes untuk mem-bypass template Nice Admin (Demo Demos)
 Route::get('/html/{path}', function ($path) {
