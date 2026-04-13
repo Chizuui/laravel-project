@@ -60,3 +60,11 @@ Route::get('/assets/{path}', function ($path) {
     }
     abort(404);
 })->where('path', '.*');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
