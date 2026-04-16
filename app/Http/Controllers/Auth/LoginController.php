@@ -59,4 +59,15 @@ class LoginController extends Controller
 
         return redirect()->route('login')->with(['error' => 'Email/Password salah!']);
     }
+
+    /**
+     * The user has logged out of the application.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return mixed
+     */
+    protected function loggedOut(Request $request)
+    {
+        return redirect()->route('login');
+    }
 }
