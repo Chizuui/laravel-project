@@ -5,6 +5,7 @@ use App\Http\Controllers\ManagementUserController;
 use App\Http\Controllers\Homepage\HomeController;
 use App\Http\Controllers\AdminPage\AdminController;
 use App\Http\Controllers\Dashboard\DashboardController;
+use App\Http\Controllers\Backend\PengalamanKerjaController;
 
 // Route untuk template Butterfly
 Route::get('/home', [HomeController::class, 'index'])->name('home');
@@ -64,3 +65,9 @@ Route::get('/assets/{path}', function ($path) {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/age', function () {
+    return 'age check finish';
+})->middleware('checkage');
+
+Route::resource('pengalaman_kerja', PengalamanKerjaController::class);
