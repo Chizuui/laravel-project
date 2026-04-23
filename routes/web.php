@@ -6,6 +6,23 @@ use App\Http\Controllers\Homepage\HomeController;
 use App\Http\Controllers\AdminPage\AdminController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Backend\PengalamanKerjaController;
+use App\Http\Controllers\SessionController;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\ErrorController;
+
+Route::get('/error/{nama?}', [ErrorController::class, 'index']);
+
+Route::get('/pegawai/{nama}', [PegawaiController::class, 'index']);
+
+Route::get('/formulir', [PegawaiController::class, 'formulir']);
+
+Route::post('/formulir/proses', [PegawaiController::class, 'proses']);
+
+Route::get('/session/create', [SessionController::class, 'create']);
+
+Route::get('/session/show', [SessionController::class, 'show']);
+
+Route::get('/session/delete', [SessionController::class, 'delete']);
 
 // Route untuk template Butterfly
 Route::get('/home', [HomeController::class, 'index'])->name('home');
@@ -18,7 +35,8 @@ Route::get('/dash', [DashboardController::class, 'index'])->name('dashboard');
 
 // Routes untuk mem-bypass template Nice Admin (Demo Demos)
 Route::get('/html/{path}', function ($path) {
-    if (str_contains($path, '..')) abort(403);
+    if (str_contains($path, '..'))
+        abort(403);
     $file = resource_path("views/AdminPage/utils/html/{$path}");
     if (file_exists($file)) {
         $mime = match (pathinfo($file, PATHINFO_EXTENSION)) {
@@ -33,7 +51,8 @@ Route::get('/html/{path}', function ($path) {
 })->where('path', '.*');
 
 Route::get('/{folder}/{path}', function ($folder, $path) {
-    if (str_contains($path, '..')) abort(403);
+    if (str_contains($path, '..'))
+        abort(403);
     $file = resource_path("views/AdminPage/utils/{$folder}/{$path}");
     if (file_exists($file)) {
         $mime = match (pathinfo($file, PATHINFO_EXTENSION)) {
@@ -48,7 +67,8 @@ Route::get('/{folder}/{path}', function ($folder, $path) {
 })->where('folder', 'css|js|src')->where('path', '.*');
 
 Route::get('/assets/{path}', function ($path) {
-    if (str_contains($path, '..')) abort(403);
+    if (str_contains($path, '..'))
+        abort(403);
     $file = public_path("AdminPage/assets/{$path}");
     if (file_exists($file)) {
         $mime = match (pathinfo($file, PATHINFO_EXTENSION)) {
@@ -71,3 +91,5 @@ Route::get('/age', function () {
 })->middleware('checkage');
 
 Route::resource('pengalaman_kerja', PengalamanKerjaController::class);
+
+
