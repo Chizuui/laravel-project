@@ -50,7 +50,7 @@ class UploadController extends Controller
             'keterangan' => 'required',
         ]);
 
-        $path = public_path('img/logo');
+        $path = public_path('data_file');
 
         if (!File::isDirectory($path)) {
             File::makeDirectory($path, 0777, true, true);
@@ -62,7 +62,7 @@ class UploadController extends Controller
 
         $manager = new ImageManager(new Driver());
 
-        $image = $manager->read($file->getRealPath());
+        $image = $manager->decode($file->getRealPath());
 
         $image->cover(200, 200);
 
@@ -82,13 +82,17 @@ class UploadController extends Controller
     {
         $image = $request->file('file');
 
-        $path = public_path('img/dropzone');
+        if (!$image) {
+            return response()->json(['error' => 'No file uploaded'], 400);
+        }
+
+        $path = public_path('img' . DIRECTORY_SEPARATOR . 'dropzone');
 
         if (!File::isDirectory($path)) {
             File::makeDirectory($path, 0777, true, true);
         }
 
-        $imageName = time() . '.' . $image->extension();
+        $imageName = time() . '_' . uniqid() . '.' . $image->getClientOriginalExtension();
 
         $image->move($path, $imageName);
 
@@ -104,13 +108,17 @@ class UploadController extends Controller
     {
         $pdf = $request->file('file');
 
-        $path = public_path('pdf/dropzone');
+        if (!$pdf) {
+            return response()->json(['error' => 'No file uploaded'], 400);
+        }
+
+        $path = public_path('pdf' . DIRECTORY_SEPARATOR . 'dropzone');
 
         if (!File::isDirectory($path)) {
             File::makeDirectory($path, 0777, true, true);
         }
 
-        $pdfName = 'pdf_' . time() . '.' . $pdf->extension();
+        $pdfName = 'pdf_' . time() . '_' . uniqid() . '.' . $pdf->getClientOriginalExtension();
 
         $pdf->move($path, $pdfName);
 
